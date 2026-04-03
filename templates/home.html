@@ -1,0 +1,15 @@
+{% extends 'html_structure.html'%}
+{%block content%}
+<div class='b'>
+    <form method='POST' action='/predict' enctype="multipart/form-data">
+            <label for="image"><h1><b>choose the image</b></h1></label>
+            <br>
+            <input type='file'  id='image' name="image" placeholder='    select the image' required>
+            <br>
+            <button><b>submit</b></button>
+            <br>
+    </form>
+     
+    </div>
+    
+    {%endblock%}
